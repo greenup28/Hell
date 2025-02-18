@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -16,28 +16,28 @@
         android:gravity="bottom">
 
 
+            <ImageView
+                android:id="@+id/Counter"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/counter" />
+
             <ImageButton
-                android:id="@+id/pokeangle"
+                android:id="@+id/Pokeangel"
                 android:layout_width="500dp"
-                android:layout_height="400dp"
+                android:layout_height="360dp"
+                android:layout_gravity="top"
                 android:layout_marginLeft="400dp"
-                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/orange"
                 app:srcCompat="@drawable/pokeangel" />
 
 
-            <ImageView
-                android:id="@+id/counter"
-                android:layout_marginTop="170dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/background_image"
-                tools:visibility="visible" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/Register"
                 android:layout_marginTop="180dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="70dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/orange"
@@ -60,9 +60,9 @@
             android:id="@+id/total_monitor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="180dp"
             android:layout_marginTop="45dp"
-            android:text="$13.50"
+            android:text="13.50"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="#7FD06E" />
     </LinearLayout>
@@ -73,12 +73,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_gravity="left"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/Option2"
                         android:layout_width="340dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="420dp"
@@ -89,8 +89,9 @@
                         android:id="@+id/customerTalking"
                         android:layout_width="400dp"
                         android:layout_height="98dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="150dp"
                         android:layout_marginTop="30dp"
+                        android:backgroundTint="#5F5F5F"
                         android:text="BATTLE ME!!!!!!!!!"
                         android:textColor="#FDFBFB"
                         android:textSize="30sp"
@@ -103,7 +104,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/Option1"
                         android:layout_width="340dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="420dp"
@@ -123,8 +124,8 @@
                         android:id="@+id/key"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginLeft="420dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="430dp"
+                        android:layout_marginRight="10dp"
                         android:backgroundTint="@color/orange"
                         android:clickable="true"
                         android:onClick="clickNew"
@@ -136,7 +137,6 @@
                         android:id="@+id/Pokeball"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginRight="20dp"
                         android:backgroundTint="@color/orange"
                         android:clickable="true"
                         android:onClick="clickNew"
@@ -154,5 +154,5 @@
         </FrameLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
 
